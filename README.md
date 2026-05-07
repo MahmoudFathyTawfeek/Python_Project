@@ -97,6 +97,12 @@ response:
 - Use **HTML Forms** for simple, traditional web pages where the browser handles the submission directly.
 - Use **JSON** when building modern APIs (like Frappe or REST APIs), mobile apps, or when you need to send complex/nested data structures that simple key-value pairs cannot handle easily.
 
+==================
+screenshoots
+ 
+ Task 3 Payload (./assets/Capture.PNG)
+ Task 3 header  (./assets/Capture2.PNG)
 
+ ==============================================================================================================================
 
 
