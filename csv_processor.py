@@ -17,5 +17,5 @@ def main():
       #if file not found          
     except FileNotFoundError:
         print(f"Error: {filename} not found. Please create a data.csv file.")
-# if __name__ == "__main__":    #تشغيل الكود عند تشغيل الملف وليس عند استدعاءه
+if __name__ == "__main__":    #تشغيل الكود عند تشغيل الملف وليس عند استدعاءه
     main()
