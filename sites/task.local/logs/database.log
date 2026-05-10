@@ -1749,3 +1749,7 @@ ALTER TABLE `tabTask-Manager` ADD COLUMN `assigned_to` varchar(140)
 ALTER TABLE `tabTask-Manager` ADD COLUMN `is_completed` int(1) not null default 0
 2026-05-01 01:26:10,147 WARNING database DDL Query made to DB:
 ALTER TABLE `tabTask-Manager` MODIFY `description` text
+2026-05-10 23:09:17,732 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTask-Manager` ADD COLUMN `amended_from` varchar(140)
+2026-05-10 23:09:18,795 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTask-Manager` ADD INDEX `amended_from_index`(`amended_from`)

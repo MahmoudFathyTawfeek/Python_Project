@@ -1,0 +1,6 @@
+_HiStOrY_V2_
+UPDATE\040`tabDocType`\040SET\040custom\040=\0400\040WHARE\040name\040=\040Task-Manager
+;
+UPDATE\040`tabDocType`\040SET\040custom\040=\0400\040WHARE\040name\040=\040Task-Manager;
+UPDATE\040`tabDocType`\040SET\040custom\040=\0400\040WHERE\040name\040=\040Task-Manager;
+UPDATE\040`tabDocType`\040SET\040custom\040=\0400\040WHERE\040name\040=\040'Task-Manager';
