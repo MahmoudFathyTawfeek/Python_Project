@@ -1,0 +1,149 @@
+2026-04-30 01:57:07,607 DEBUG cd task-manger && uv venv env --seed --python python3
+2026-04-30 01:57:12,790 LOG Getting frappe
+2026-04-30 01:57:12,790 DEBUG cd task-manger/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2026-04-30 01:57:44,317 LOG Installing frappe
+2026-04-30 01:57:44,319 DEBUG cd /home/mahmoudtawfeek/task-manger && uv pip install --quiet --upgrade -e /home/mahmoudtawfeek/task-manger/apps/frappe  --python /home/mahmoudtawfeek/task-manger/env/bin/python
+2026-04-30 01:57:54,122 DEBUG cd /home/mahmoudtawfeek/task-manger/apps/frappe && yarn install --check-files
+2026-04-30 02:03:27,226 DEBUG cd task-manger && bench build
+2026-04-30 02:03:31,448 INFO /home/mahmoudtawfeek/.local/bin/bench build
+2026-04-30 02:15:20,203 LOG setting up backups
+2026-04-30 02:15:25,337 LOG backups were set up
+2026-04-30 02:15:25,363 INFO Bench task-manger initialized
+2026-04-30 02:26:50,905 INFO /home/mahmoudtawfeek/.local/bin/bench new-site task.local
+2026-04-30 02:35:40,570 INFO /home/mahmoudtawfeek/.local/bin/bench get-app erpnext --branch version15
+2026-04-30 02:35:50,889 WARNING /home/mahmoudtawfeek/.local/bin/bench get-app erpnext --branch version15 executed with exit code 1
+2026-04-30 02:52:52,612 INFO /home/mahmoudtawfeek/.local/bin/bench get-app erpnext --branch version15
+2026-04-30 02:52:54,075 LOG Getting erpnext
+2026-04-30 02:52:54,075 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version15 --depth 1 --origin upstream
+2026-04-30 02:53:02,248 WARNING cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version15 --depth 1 --origin upstream executed with exit code 128
+2026-04-30 02:53:02,248 WARNING /home/mahmoudtawfeek/.local/bin/bench get-app erpnext --branch version15 executed with exit code 1
+2026-04-30 02:54:13,510 INFO /home/mahmoudtawfeek/.local/bin/bench get-app erpnext --branch version-15
+2026-04-30 02:54:14,607 LOG Getting erpnext
+2026-04-30 02:54:14,607 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2026-04-30 02:54:57,618 LOG Installing erpnext
+2026-04-30 02:54:57,619 DEBUG cd /home/mahmoudtawfeek/task-manger && uv pip install --quiet --upgrade -e /home/mahmoudtawfeek/task-manger/apps/erpnext  --python /home/mahmoudtawfeek/task-manger/env/bin/python
+2026-04-30 02:55:53,904 DEBUG cd /home/mahmoudtawfeek/task-manger/apps/erpnext && yarn install --check-files
+2026-04-30 02:56:02,942 DEBUG bench build --app erpnext
+2026-04-30 02:56:03,127 INFO /home/mahmoudtawfeek/.local/bin/bench build --app erpnext
+2026-04-30 03:03:40,328 INFO /home/mahmoudtawfeek/.local/bin/bench --site task.local install-app erpnext
+2026-04-30 03:11:55,977 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-04-30 03:11:57,867 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-04-30 03:11:57,885 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-04-30 03:11:58,004 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-04-30 03:11:58,034 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-04-30 03:42:26,754 INFO /home/mahmoudtawfeek/.local/bin/bench start --port 8000 --host 0.0.0.0
+2026-04-30 03:42:27,817 WARNING /home/mahmoudtawfeek/.local/bin/bench start --port 8000 --host 0.0.0.0 executed with exit code 2
+2026-04-30 03:46:17,276 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-04-30 03:46:21,362 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-04-30 03:46:21,416 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-04-30 03:46:21,416 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-04-30 03:46:21,479 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-04-30 04:09:31,833 INFO /home/mahmoudtawfeek/.local/bin/bench use task.local
+2026-04-30 04:10:57,282 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-04-30 04:11:00,577 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-04-30 04:11:00,788 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-04-30 04:11:00,905 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-04-30 04:11:00,926 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-04-30 13:48:06,669 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-04-30 13:48:15,458 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-04-30 13:48:15,536 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-04-30 13:48:15,548 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-04-30 13:48:15,849 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-04-30 13:55:31,274 INFO /home/mahmoudtawfeek/.local/bin/bench new-app task_manager
+2026-04-30 13:55:31,403 LOG creating new app task_manager
+2026-04-30 13:59:09,559 LOG Installing task_manager
+2026-04-30 13:59:09,562 DEBUG cd /home/mahmoudtawfeek/task-manger && uv pip install --quiet --upgrade -e /home/mahmoudtawfeek/task-manger/apps/task_manager  --python /home/mahmoudtawfeek/task-manger/env/bin/python
+2026-04-30 13:59:25,143 DEBUG bench build --app task_manager
+2026-04-30 13:59:25,360 INFO /home/mahmoudtawfeek/.local/bin/bench build --app task_manager
+2026-04-30 14:01:53,883 INFO /home/mahmoudtawfeek/.local/bin/bench --site task.local install-app task_manager
+2026-05-01 00:09:04,778 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-01 00:09:19,354 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-01 00:09:19,365 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-01 00:09:19,806 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-01 00:09:20,368 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-08 06:50:25,239 INFO /home/mahmoudtawfeek/.local/bin/bench restart
+2026-05-08 06:52:53,444 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-08 06:52:54,014 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-08 06:52:54,022 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-08 06:52:54,086 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-08 06:52:54,092 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-10 20:45:29,006 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-10 20:45:30,263 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-10 20:45:30,265 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-10 20:45:30,272 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-10 20:45:30,276 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-10 20:53:31,270 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-10 20:53:31,873 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-10 20:53:31,877 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-10 20:53:31,975 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-10 20:53:32,018 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-10 20:56:19,936 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-10 20:56:20,361 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-10 20:56:20,371 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-10 20:56:20,461 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-10 20:56:20,588 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-10 22:44:28,398 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-10 22:44:29,563 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-10 22:44:29,567 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-10 22:44:29,585 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-10 22:44:29,600 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-11 00:06:20,197 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-11 00:06:20,647 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-11 00:06:20,664 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-11 00:06:20,760 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-11 00:06:20,888 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-11 00:36:29,132 INFO /home/mahmoudtawfeek/.local/bin/bench clear-cache
+2026-05-11 00:36:34,032 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-11 00:36:34,498 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-11 00:36:34,579 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-11 00:36:34,642 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-11 00:36:34,721 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-11 00:55:50,420 INFO /home/mahmoudtawfeek/.local/bin/bench --site task.local mariadb
+2026-05-11 01:00:25,355 INFO /home/mahmoudtawfeek/.local/bin/bench clear-cache
+2026-05-11 01:00:45,556 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-11 01:00:46,012 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-11 01:00:46,090 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-11 01:00:46,136 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-11 01:00:46,255 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-11 06:49:24,335 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-11 06:49:24,841 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-11 06:49:24,896 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-11 06:49:24,908 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-11 06:49:25,011 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-11 17:35:16,084 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-11 17:35:17,557 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-11 17:35:17,609 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-11 17:35:17,627 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-11 17:35:17,638 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-11 20:23:37,095 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-11 20:23:37,629 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-11 20:23:37,635 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-11 20:23:37,717 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-11 20:23:37,807 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-11 20:47:59,916 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-11 20:48:01,118 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-11 20:48:01,121 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-11 20:48:01,121 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-11 20:48:01,144 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-11 22:13:41,180 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-11 22:13:41,697 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-11 22:13:41,773 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-11 22:13:41,796 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-11 22:13:41,877 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-11 23:17:15,125 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-11 23:17:17,609 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-11 23:17:17,626 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-11 23:17:17,636 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-11 23:17:17,637 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-12 18:35:16,883 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-12 18:35:17,928 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-12 18:35:17,937 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-12 18:35:17,954 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-12 18:35:17,973 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-12 20:08:09,860 INFO /home/mahmoudtawfeek/.local/bin/bench export-fixtures
+2026-05-12 23:58:16,988 INFO /home/mahmoudtawfeek/.local/bin/bench start
+2026-05-12 23:58:18,390 INFO /home/mahmoudtawfeek/.local/bin/bench worker
+2026-05-12 23:58:18,393 INFO /home/mahmoudtawfeek/.local/bin/bench schedule
+2026-05-12 23:58:18,395 INFO /home/mahmoudtawfeek/.local/bin/bench watch
+2026-05-12 23:58:18,407 INFO /home/mahmoudtawfeek/.local/bin/bench serve --port 8000
+2026-05-13 00:17:51,072 INFO /home/mahmoudtawfeek/.local/bin/bench export-fixtures
