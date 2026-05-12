@@ -16,7 +16,7 @@ This app is task managment system using frappe framework.
 *- Bench CLI
 
 =============================================================================================
-#-add some features to task manager app ---> day-
+#-add some features to task manager app ---> day-2
 ==================================
 
 *- Developed a comprehensive dashbourd for real-time tasks monitoring.
