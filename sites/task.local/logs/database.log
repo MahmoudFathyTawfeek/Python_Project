@@ -1753,3 +1753,28 @@ ALTER TABLE `tabTask-Manager` MODIFY `description` text
 ALTER TABLE `tabTask-Manager` ADD COLUMN `amended_from` varchar(140)
 2026-05-10 23:09:18,795 WARNING database DDL Query made to DB:
 ALTER TABLE `tabTask-Manager` ADD INDEX `amended_from_index`(`amended_from`)
+2026-05-11 21:00:37,732 WARNING database DDL Query made to DB:
+create table `tabTask step` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-05-11 21:05:35,201 WARNING database DDL Query made to DB:
+alter table `tabTask step` add column if not exists parent varchar(140)
+2026-05-11 21:05:35,202 WARNING database DDL Query made to DB:
+alter table `tabTask step` add column if not exists parenttype varchar(140)
+2026-05-11 21:05:35,204 WARNING database DDL Query made to DB:
+alter table `tabTask step` add column if not exists parentfield varchar(140)
+2026-05-11 21:05:36,130 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTask step` ADD COLUMN `step_title` varchar(140), ADD COLUMN `completed` int(1) not null default 0

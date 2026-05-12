@@ -1,6 +1,6 @@
 
 
-#- Task manager app 
+#- Task manager app ---> day-1
 This app is task managment system using frappe framework.
 ===============
 
@@ -14,3 +14,14 @@ This app is task managment system using frappe framework.
 *- (WSL) ubuntu via windows subsystem fox linux
 *- MariaDB
 *- Bench CLI
+
+=============================================================================================
+#-add some features to task manager app ---> day-
+==================================
+
+*- Developed a comprehensive dashbourd for real-time tasks monitoring.
+*- Create number cards to display "Total tasks" and "completed tasks" statistics.
+*- Designed bar and donut charts to visualize tasks based on status and priority/
+*- Configured doctype fields to be visible in "list view" for better accessibility.
+*- Impelement mandatory data validation for essential fields like task title and status.
+==========================================================================================
